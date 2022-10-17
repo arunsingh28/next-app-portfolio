@@ -35,23 +35,27 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+              <p>Even in such technical lines as engineering, about 15% of one's financial success is due one's technical knowledge and about 85% is due to skill in human engineering,<br></br>  to personality and the ability to lead people.<br /><br /><small>—<i> Dale Carnegie</i></small></p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <img src={meter1} alt="Image" />
-                  <h5>HTML</h5>
+                  <h5>React</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
-                  <h5>CSS</h5>
+                  <h5>MongoDB</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Image" />
-                  <h5>Node.js</h5>
+                  <h5>JavaScript</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="Image" />
-                  <h5>MongoDB</h5>
+                  <h5>Node.js</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Image" />
+                  <h5>SQL</h5>
                 </div>
               </Carousel>
             </div>
@@ -59,6 +63,6 @@ export const Skills = () => {
         </div>
       </div>
       <img className="background-image-left" src={colorSharp} alt="Image" />
-    </section>
+    </section >
   )
 }

@@ -9,10 +9,10 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(200 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
-  const period = 2000;
+  const toRotate = ["MERN Stack Developer", "Web Designer", "Full Stack Developer"];
+  const period = 1400;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`Hi! I'm Arun`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "Mern Stack developer" ]'><span className="wrap">{text}</span></span></h1>
+                  <h1>{`Hi! I'm Arun`} <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Web Designer", "Mern Stack developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>My greatest passion in life is using my
                     knowledge and know-how to benefit
                     other people and organizatons.
