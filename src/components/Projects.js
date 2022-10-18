@@ -12,6 +12,8 @@ import Project1 from '../assets/img/Projects/project1.png'
 import Project2 from '../assets/img/Projects/project2.png'
 import Project3 from '../assets/img/Projects/project3.png'
 import Project4 from '../assets/img/Projects/project4.png'
+import Certificate from "./Certificate";
+import Experience from "./Experience";
 
 export const Projects = () => {
 
@@ -42,6 +44,12 @@ export const Projects = () => {
     },
   ];
 
+  const jobContent = [
+    { point: "Took responsibility for building REST APIs with Node.js." },
+    { point: "Build SEO dashboard from scratch by using SerpApi." },
+    { point: "Established remote deployment using Heroku storage using AWS S3." },
+    { point: "Designed and developed SPA with React and Next.js from mockups(PSD)." }
+  ]
   return (
     <section className="project" id="project">
       <Container>
@@ -51,16 +59,16 @@ export const Projects = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Achievement</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>Imagination is more important than knowledge.  For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.<br /><br /><small>— <i>Albert Einstein</i></small></p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                      <Nav.Item>
+                      <Nav.Item style={{ 'cursor': 'pointer' }}>
                         <Nav.Link eventKey="first">Project</Nav.Link>
                       </Nav.Item>
-                      <Nav.Item>
+                      <Nav.Item style={{ 'cursor': 'pointer' }}>
                         <Nav.Link eventKey="second">Certificate</Nav.Link>
                       </Nav.Item>
-                      <Nav.Item>
+                      <Nav.Item style={{ 'cursor': 'pointer' }}>
                         <Nav.Link eventKey="third">Experience</Nav.Link>
                       </Nav.Item>
                     </Nav>
@@ -82,11 +90,14 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         {/* card for certificate */}
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <Certificate title={'Server-Side with Nodejs Express with MongoDB'} date={'Issued May 2020 · No Expiration Date'} />
+                        <Certificate date={'Issued June 2019 · No Expiration Date'} title={'Front-end web development with React'} />
+                        <Certificate title={'Front-end web ui framework and tool:bootstrap 4'} date={'Issued Nov 2020 · No Expiration Date'} />
+                        <Certificate title={'Interactivity with javascript'} date={'Issued April 2021 · No Expiration Date'} />
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         {/* experience */}
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <Experience jobTitle={'Mern Developer'} company={'Pushideas, Mohali'} time={'May 2021 - Aug 2021 · 4 months'} point={jobContent} />
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
